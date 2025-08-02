@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A sample HTML5 page demonstrating semantic structure, accessibility, and SEO-friendly practices." />
+  <meta name="keywords" content="HTML5, Semantic HTML, Accessibility, SEO, Example" />
+  <meta name="author" content="Your Name" />
+  <title>Accessible & Semantic HTML5 Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Charles website</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" aria-current="page">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We create modern, accessible, and SEO-optimized websites using the latest web standards.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <article>
+        <h3>Web Design</h3>
+        <p>We design responsive and user-friendly websites for businesses and individuals.</p>
+      </article>
+      <article>
+        <h3>SEO Optimization</h3>
+        <p>Our team ensures your site is optimized for search engines from the ground up.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST" aria-labelledby="contact-heading">
+        <fieldset>
+          <legend id="contact-heading">Get in Touch</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
